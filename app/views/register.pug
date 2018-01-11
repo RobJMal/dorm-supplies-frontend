@@ -1,0 +1,18 @@
+extends template
+
+block content
+	h1 Welcome to Dorm Supplies 
+		h2 Register for Account 
+	form(method='POST' action='/register')
+		input(type='text' name='name' placeholder='Name')
+		br
+		input(type='email' name='email' placeholder='Email')
+		br
+		input(type='password' name='password' placeholder='Password')
+		br
+		input(type='text' name='address' placeholder='Address (Dorm & Room #)')
+		br
+		input(type='number' name='classYear' placeholder='Class Year')
+		br
+		button(type='button' onclick='register()') Register
+
